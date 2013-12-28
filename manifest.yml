@@ -1,0 +1,10 @@
+---
+applications:
+- name: cf-node-demo
+  command: node app.js
+  buildpack: https://github.com/cloudfoundry/heroku-buildpack-nodejs.git
+  memory: 128M
+  instances: 1
+  host: cf-node-demo
+  domain: cfapps.io
+  path: .
